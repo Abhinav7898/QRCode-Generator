@@ -24,22 +24,22 @@ namespace QRGenerator.Controllers
                     string text = string.Empty;
                     switch (model.QRCodeType)
                     {
-                        case 1: // website url
+                        case 1: // website qr code
                             payload = new Url(model.WebsiteURL);
                             break;
-                        case 2: // compose sms
+                        case 2: // sms
                             payload = new SMS(model.SMSPhoneNumber, model.SMSBody);
                             break;
-                        case 3: // compose whatsapp message
+                        case 3: // whatsapp qr code
                             payload = new WhatsAppMessage(model.WhatsAppNumber, model.WhatsAppMessage);
                             break;
-                        case 4: //compose email
+                        case 4: // email qr code
                             payload = new Mail(model.ReceiverEmailAddress, model.EmailSubject, model.EmailMessage);
                             break;
                         case 5: // wifi qr code
                             payload = new WiFi(model.WIFIName, model.WIFIPassword, WiFi.Authentication.WPA);
                             break;
-                        case 6: // text message
+                        case 6: // text qr code
                             text = model.Text;
                             break;
                     }

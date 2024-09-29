@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRGenerator", "QRGenerator.csproj", "{01CFBF43-607D-4ED4-8185-2515C7C34D5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01CFBF43-607D-4ED4-8185-2515C7C34D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CFBF43-607D-4ED4-8185-2515C7C34D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CFBF43-607D-4ED4-8185-2515C7C34D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CFBF43-607D-4ED4-8185-2515C7C34D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09C19661-B9E9-4183-B212-7D90D0E6FD44}
+	EndGlobalSection
+EndGlobal

@@ -8,9 +8,6 @@ namespace QRGenerator.Models
         [Range(1, 13, ErrorMessage = "Please select a valid QR code type.")]
         public int QRCodeType { get; set; }
         public string? QRImageURL { get; set; } = string.Empty;
-        //for bookmark qr code
-        public string? BookmarkTitle { get; set; } = string.Empty;
-        public string? BookmarkURL { get; set; } = string.Empty;
         // for email qr codes
         public string? ReceiverEmailAddress { get; set; } = string.Empty;
         public string? EmailSubject { get; set; } = string.Empty;
@@ -27,7 +24,7 @@ namespace QRGenerator.Models
         public string? WIFIName { get; set; } = string.Empty;
         public string? WIFIPassword { get; set; } = string.Empty;
 
-        // for Text
+        // for Text qr code
         public string? Text { get; set; } = string.Empty;
     }
 }

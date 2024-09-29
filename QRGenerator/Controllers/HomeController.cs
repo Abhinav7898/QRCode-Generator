@@ -27,28 +27,25 @@ namespace QRGenerator.Controllers
                         case 1: // website url
                             payload = new Url(model.WebsiteURL);
                             break;
-                        case 2: // bookmark url
-                            payload = new Bookmark(model.BookmarkURL, model.BookmarkURL);
-                            break;
-                        case 3: // compose sms
+                        case 2: // compose sms
                             payload = new SMS(model.SMSPhoneNumber, model.SMSBody);
                             break;
-                        case 4: // compose whatsapp message
+                        case 3: // compose whatsapp message
                             payload = new WhatsAppMessage(model.WhatsAppNumber, model.WhatsAppMessage);
                             break;
-                        case 5: //compose email
+                        case 4: //compose email
                             payload = new Mail(model.ReceiverEmailAddress, model.EmailSubject, model.EmailMessage);
                             break;
-                        case 6: // wifi qr code
+                        case 5: // wifi qr code
                             payload = new WiFi(model.WIFIName, model.WIFIPassword, WiFi.Authentication.WPA);
                             break;
-                        case 7: // text message
+                        case 6: // text message
                             text = model.Text;
                             break;
                     }
                     QRCodeGenerator qrGenerator = new QRCodeGenerator();
                     QRCodeData qrCodeData;
-                    if (model.QRCodeType != 7)
+                    if (model.QRCodeType != 6)
                         qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
                     else
                         qrCodeData = qrGenerator.CreateQrCode(text, QRCodeGenerator.ECCLevel.Q);

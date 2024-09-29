@@ -12,11 +12,11 @@
                 <label>Select QR Code Type</label>
                 <select asp-for="QRCodeType" id="QRCodeType" class="form-control" onchange="onQRCodeTypeChange()">
                     <option value="1">Website</option>
-                    <option value="3">SMS</option>
-                    <option value="4">WhatsApp</option>
-                    <option value="5">Email</option>
-                    <option value="6">WIFI</option>
-                    <option value="7">Text</option>
+                    <option value="2">SMS</option>
+                    <option value="3">WhatsApp</option>
+                    <option value="4">Email</option>
+                    <option value="5">WIFI</option>
+                    <option value="6">Text</option>
                 </select>
             </div>
         </div>
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div id="DIV3" class="hideDiv">
+        <div id="DIV2" class="hideDiv">
             <div class="row mt-2">
                 <div class="col-lg-12 col-md-6 col-sm-12">
                     <label>Enter Phone Number</label>
@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div id="DIV4" class="hideDiv">
+        <div id="DIV3" class="hideDiv">
             <div class="row mt-2">
                 <div class="col-lg-12 col-md-6 col-sm-12">
                     <label>Enter WhatsApp Number</label>
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div id="DIV5" class="hideDiv">
+        <div id="DIV4" class="hideDiv">
             <div class="row mt-2">
                 <div class="col-lg-12 col-md-6 col-sm-12">
                     <label>Enter Receiver's Email Address</label>
@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <div id="DIV6" class="hideDiv">
+        <div id="DIV5" class="hideDiv">
             <div class="row mt-2">
                 <div class="col-lg-12 col-md-6 col-sm-12">
                     <label>Enter WIFI Name</label>
@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        <div class="row mt-2 hideDiv" id="DIV7">
+        <div id="DIV6" class="row mt-2 hideDiv">
             <div class="col-lg-12 col-md-6 col-sm-12">
                 <label>Enter Text</label>
                 <input autocomplete="off" type="text" asp-for="Text" class="form-control w-100" />
